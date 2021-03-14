@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Layout from './components/Layout/Layout';
+import VideoSlide from './containers/VideoSlide/VideoSlide';
 
 
 class App extends Component {
@@ -7,7 +8,7 @@ class App extends Component {
     return (
       <div>
         <Layout>
-          <p>Test paragraph in the layout component</p>
+          <VideoSlide />
         </Layout>
         
       </div>
