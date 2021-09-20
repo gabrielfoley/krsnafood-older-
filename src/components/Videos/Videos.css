@@ -1,0 +1,7 @@
+::-webkit-scrollbar {
+  width: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: cornflowerblue
+}
