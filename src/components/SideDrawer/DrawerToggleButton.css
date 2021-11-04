@@ -21,3 +21,9 @@
   background: white;
 
 }
+
+@media (max-width: 500px) {
+  .toggle-button {
+  display: none;
+}
+}

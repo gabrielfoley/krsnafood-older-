@@ -25,7 +25,7 @@ const useStyles = makeStyles( ({
 }));
 
 const boxProps2 = {
-  bgcolor: 'background.paper',
+  bgColor: 'background.paper',
   borderColor: 'text.secondary',
   m: 1,
   borderRadius: 10,

@@ -3,16 +3,17 @@ import Toolbar from './components/Toolbar/Toolbar';
 import './components/Toolbar/Toolbar.css';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import BackDrop from './components/BackDrop/BackDrop';
-import BottomNav from './components/BottomNav/BottomNav';
+import BottomToolbar from './components/BottomNav/BottomBar';
 import HeaderGrid from './HeaderGrid';
 import SqPMT from './components/sqpaymentReact';
+import Videos from './components/Videos/Videos';
 import KrsnaFood_Web from './components/Toolbar/KrsnaFood_Web.png';
 //import SwipeViews from './components/SwipeViews/SwipeViews';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 
-import Videos from './components/Videos/Videos';
+//import Videos from './components/Videos/Videos';
 
 //TESTING GIT !
 //import KrsnaFood_Web from '../src/KrsnaFood_Web.png';
@@ -46,7 +47,11 @@ class App extends Component {
     }
   
   return (
-    <div style={{height: '100%'}}>
+    <div className='app_allcontent'>
+      <header className='app_navigation'>
+      
+    {//<div style={{height: '100%'}}>
+    }
 {
 //<FullWidthTabs />
 }
@@ -59,27 +64,41 @@ class App extends Component {
 <SideDrawer show={this.state.sideDrawerOpen} />
 {backdrop}
 
+
+</header>
 <Router>
       <Switch>
-<main style={{marginTop: '64px'}}>
-<img src={KrsnaFood_Web} alt="Krsna Food" height="150" width="150" />
+        
+<main style={{marginTop: '50px', background: 'orange', width: '100%', 
+  height: '100%'}}>
+  <div className='logo_krsna'>
+<img src={KrsnaFood_Web} alt="Krsna Food" height="150" width="150"/>
+</div>
 <Route path='/HeaderGrid' component={HeaderGrid} id='header' />
 <Route path='/SqPMT' component={SqPMT} id='sqpmt' />
+<Route path='/Videos' component={Videos} id='videos' />
+
 
 {//<SwipeViews />
 }
 </main>
      </Switch>
 </Router>
-{/*
-<main style={{marginTop: '64px'}}>
-<p>This is some page content</p> 
-</main>
-*/}
-   <Videos />
-   <BottomNav />
-   </div> 
+
+
+<footer class='app_footer'>
+<Router>
+      <Switch>
+  <BottomToolbar drawerClickHandler={this.drawerToggleClickHandler} />
+  </Switch>
+  </Router>
+</footer>
+
+   </div>
+   
+ 
   )
 }
 }
+
 export default App;

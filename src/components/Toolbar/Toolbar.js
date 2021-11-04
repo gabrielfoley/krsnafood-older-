@@ -6,7 +6,8 @@ import KrsnaFood_Web from './KrsnaFood_Web.png';
 //import { AiFillInfoCircle } from 'react-icons/ai';
 //import { AiFillSchedule } from 'react-icons/ai';
 //import { Calendar } from '@styled-icons/boxicons-regular/Calendar';
-import { Donate, HandsHelping } from '@styled-icons/fa-solid/';
+import { Donate, HandsHelping, Video } from '@styled-icons/fa-solid/';
+import { InfoSquareFill } from '@styled-icons/bootstrap/';
 //import { HandsHelping } from '@styled-icons/fa-solid/HandsHelping';
 //import { Router } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -25,10 +26,13 @@ const toolbar = props => (
       <div className='toolbar_navigation-items'>
         <ul>
           <Link to="/HeaderGrid">
-          <li>CALENDAR</li>
+          <li><InfoSquareFill size={42} marginTop={100} /></li>
           </Link>
         {//<li><Calendar size={45}/></li>
         }
+        <Link to="/Videos">
+          <li><Video size={49} /></li>
+          </Link>
           
            { //<li><a href="/"><Calendar size={45} /></a></li>
            }

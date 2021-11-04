@@ -1,19 +1,23 @@
 .toolbar {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: 0;
+  right: 0;
+  height: 60px;
   width: 100%;
   background: #b71c1c;
-  height: 60px;
+  
 }
 
 .toolbar_navigation {
   display: flex;
   height: 100%;
+  width: 100%; 
   align-items: center;
   padding: 0 1rem;
 }
 
+/*
 .toolbar_logo {
   margin-left: 1rem;
 }
@@ -25,9 +29,12 @@
 
 }
 
+
 .spacer {
   flex: 0;
 }
+*/
+
 
 .toolbar_navigation-items ul {
   list-style: none;
@@ -52,11 +59,11 @@
   color:darkorange
 }
 
-/*@media (max-width: 768px) {
+@media (max-width: 500px) {
   .toolbar_navigation-items {
   display: none;
 }
-}*/
+}
 
 .krsna_logo {
   display: flex;
@@ -64,4 +71,11 @@
   justify-content: space-around;
   height: 50px;
   width: 50px;
+  padding: 1rem;
+}
+
+@media (max-width: 500px) {
+  .krsna_logo {
+    display: none;
+  }
 }

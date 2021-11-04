@@ -5,3 +5,63 @@
 ::-webkit-scrollbar-track {
   background: cornflowerblue
 }
+
+.app_allcontent {
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background: #b71c1c;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 1rem;
+}
+
+.app_headercontent {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: #b71c1c;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 1rem;
+}
+
+.app_navigation {
+ position:fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background: #b71c1c;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 1rem;
+}
+
+.app_footer {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background:lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0;
+}
+.logo_krsna {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
